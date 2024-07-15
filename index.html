@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog em Três Colunas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <button id="addPostBtn">Adicionar Postagem</button>
+    </header>
+    <div class="container">
+        <div class="column" id="coluna1" value="">
+            <h2>👤</h2>
+        </div>
+
+    </div>
+
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Adicionar Postagem</h2>
+            <textarea id="postContent" placeholder="Escreva sua postagem aqui..."></textarea>
+            <button id="savePostBtn">Salvar</button>
+        </div>
+    </div>
+
+
+    <div id="commentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-comment">&times;</span>
+            <h2 id="commentModalTitle">Adicionar Comentário</h2>
+            <input type="text" id="commentAuthor" placeholder="Seu nome...">
+            <textarea id="commentContent" placeholder="Escreva seu comentário aqui..."></textarea>
+            <button id="saveCommentBtn">Comentar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
